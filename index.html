@@ -1,0 +1,141 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+   <div>
+        <h1 id="titulo">Pesquisa de Satisfação - Ink Sane Tattoo</h1>
+        <p id="subtitulo"><strong>Sua opnião é muito importante para nós!</strong></p>
+        <br>
+   </div> 
+
+   <form>
+       <div class="grupo" >
+           <div class="campo">
+            <label for="nome"><strong>Nome (opcional)</strong></label>
+            <input type="text" id=nome name="nome" placeholder="Coloque seu nome">
+           </div>
+
+           <div class="campo">
+            <label for="email"><strong>Email (opcional)</strong></label>
+            <input type="email" id="email" name="email" placeholder="Coloque seu email">
+           </div>
+
+           <div class="campo">
+            <label for="numero"><strong>Número de Telefone (opcional)</strong></label>
+            <input type="tel" id="numero" name="numero" placeholder="(xx) xxxxx-xxxx">
+           </div>
+
+           <div class="campo">
+            <label for="faixaEtaria"><strong>Qual a sua faixa etária?</strong></label>
+            <select id="faixaEtaria" name="faixaEtaria">
+                <option value="18-25">18-25</option>
+                <option value="26-33">26-33</option>
+                <option value="34-41">34-41</option>
+                <option value="42-49">42-49</option>
+                <option value="maisDe50">Mais de 50</option>
+              </select>
+           </div>
+        </div>
+           <br>
+           <div class="campo">
+               <label for="clasificacao">De maneira geral, como clasificaria nossos serviços?</label>
+               <br>
+               <br>
+               <div class="opcao">
+                <table id="tbl" class="table table-bordered table-hover dataTable">
+                    <thead>
+                        <tr role="row">
+                            <th>Descrição</th>
+                            <th>Excelente</th>
+                            <th>Bom</th>
+                            <th>Médio</th>
+                            <th>Insatisfatório</th>
+                        </tr>
+                    </thead>
+                    <tbody>    
+                        <tr role="row" data-row-index="0">
+                          <td>Atendimento</td>
+                          <td data-id="1"><input name="chkSelecionar0" id="chkSelecionaInsere0" type="radio"/></td>
+                          <td data-id="1"><input name="chkSelecionar0" id="chkSelecionaExcluir0" type="radio"/></td>
+                          <td data-id="1"><input name="chkSelecionar0" id="chkSelecionaExcluir0" type="radio"/></td>
+                          <td data-id="1"><input name="chkSelecionar0" id="chkSelecionaExcluir0" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td >Ambiente</td>  
+                            <td data-id="2"><input name="chkSelecionar1" id="chkSelecionaInsere1" type="radio"/></td>
+                            <td data-id="2"><input name="chkSelecionar1" id="chkSelecionaExcluir1" type="radio"/></td>
+                            <td data-id="2"><input name="chkSelecionar1" id="chkSelecionaExcluir1" type="radio"/></td>
+                            <td data-id="2"><input name="chkSelecionar1" id="chkSelecionaExcluir1" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td>Conservação e higiene dos equipamentos</td>
+                            <td data-id="3"><input name="chkSelecionar2" id="chkSelecionaInsere2" type="radio"/></td>
+                            <td data-id="3"><input name="chkSelecionar2" id="chkSelecionaExcluir2" type="radio"/></td>
+                            <td data-id="3"><input name="chkSelecionar2" id="chkSelecionaExcluir2" type="radio"/></td>
+                            <td data-id="3"><input name="chkSelecionar2" id="chkSelecionaExcluir2" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td>Pontualidade</td>
+                            <td data-id="4"><input name="chkSelecionar3" id="chkSelecionaInsere3" type="radio"/></td>
+                            <td data-id="4"><input name="chkSelecionar3" id="chkSelecionaExcluir3" type="radio"/></td>
+                            <td data-id="4"><input name="chkSelecionar3" id="chkSelecionaExcluir3" type="radio"/></td>
+                            <td data-id="4"><input name="chkSelecionar3" id="chkSelecionaExcluir3" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td>Qualidade</td>
+                            <td data-id="5"><input name="chkSelecionar4" id="chkSelecionaInsere4" type="radio"/></td>
+                            <td data-id="5"><input name="chkSelecionar4" id="chkSelecionaExcluir4" type="radio"/></td>
+                            <td data-id="5"><input name="chkSelecionar4" id="chkSelecionaExcluir4" type="radio"/></td>
+                            <td data-id="5"><input name="chkSelecionar4" id="chkSelecionaExcluir4" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td>Agilidade</td>
+                            <td data-id="6"><input name="chkSelecionar5" id="chkSelecionaInsere5" type="radio"/></td>
+                            <td data-id="6"><input name="chkSelecionar5" id="chkSelecionaExcluir5" type="radio"/></td>
+                            <td data-id="6"><input name="chkSelecionar5" id="chkSelecionaExcluir5" type="radio"/></td>
+                            <td data-id="6"><input name="chkSelecionar5" id="chkSelecionaExcluir5" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td>Cordialidade</td>
+                            <td data-id="7"><input name="chkSelecionar6" id="chkSelecionaInsere6" type="radio"/></td>
+                            <td data-id="7"><input name="chkSelecionar6" id="chkSelecionaExcluir6" type="radio"/></td>
+                            <td data-id="7"><input name="chkSelecionar6" id="chkSelecionaExcluir6" type="radio"/></td>
+                            <td data-id="7"><input name="chkSelecionar6" id="chkSelecionaExcluir6" type="radio"/></td>
+                        </tr>
+                        <tr role="row" data-row-index="0">
+                            <td>Preços e formas de pagamento</td>
+                            <td data-id="8"><input name="chkSelecionar7" id="chkSelecionaInsere7" type="radio"/></td>
+                            <td data-id="8"><input name="chkSelecionar7" id="chkSelecionaExcluir7" type="radio"/></td>
+                            <td data-id="8"><input name="chkSelecionar7" id="chkSelecionaExcluir7" type="radio"/></td>
+                            <td data-id="8"><input name="chkSelecionar7" id="chkSelecionaExcluir7" type="radio"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>        
+           </div>
+        <br>
+            <div class="probabilidade">
+                <label for="probabilidade">Qual a probalidade de voltar ou de indicar um(a) amigo(a)?</label>
+                <select id="probabilidade" name="probabilidade">
+                    <option value="0-4">0-4</option>
+                    <option value="5-9">5-9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        <br>
+            <div class="sugestao">
+                <h4> Sugestões</h4>
+                <textarea name="sugestoes" id="sugestoes" cols="30" rows="6" style="width: 26em" placeholder="Deixe sua sugestão..."></textarea>
+            </div>
+
+            <button class="botao" type="submit" class="btn btn-primary btn-sm">Enviar</button>
+    </form>
+</body>
+</html>
