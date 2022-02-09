@@ -22,7 +22,7 @@
 }
 
 body{
-    background-color: #d2e3f1;
+    background-color: #abd3f3;
     font-family: sans-serif;
     font-size: 1em;
     color: #614e9b;
@@ -35,7 +35,7 @@ input, select, textarea, button {
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .campo {
@@ -64,6 +64,13 @@ input, select, textarea, button {
     border-radius: 10px 10px 10px 10px;
 }
 
+#tbl {
+    border-collapse: separate;
+    border-spacing: 40px 10px;
+    padding: 10px;
+}
+
+
 .botao {
     font-size: 1.2em;
     background: #59429d;
@@ -83,7 +90,7 @@ input, select, textarea, button {
     text-shadow: none;
 }
 
-.botao, select{
+.botao, select, input {
     cursor: pointer;
 }
 
